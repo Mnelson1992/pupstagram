@@ -13,6 +13,12 @@ class Api::ImagesController < ApplicationController
     end
   end
 
+  def update
+    @image = Image.find(params[:id])
+    @image.update_attributes(image_params)
+    render json: @image
+  end
+
 
 
   private
