@@ -17,3 +17,11 @@ Image.create(
   imageURL: 'https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjYopLx9oXcAhWMt1kKHTiSCSQQjRx6BAgBEAU&url=http%3A%2F%2Fwww.vitamin-ha.com%2Ffunny-dog-shaming-pictures-15-pics%2Ffunny-dog-shaming-pictures-01%2F&psig=AOvVaw0w483W3GZVJDiULDmG1lKj&ust=1530810138691688',
   name: 'Rex',
   description: 'This is too cute')
+Image.create(
+  imageURL: 'https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi_jJf2-IXcAhWKzlkKHZtcBJwQjRx6BAgBEAU&url=https%3A%2F%2Fwww.puppyleaks.com%2Fbond-with-new-dog%2F&psig=AOvVaw3nqni7G6sOc5o2vn5WbpZ3&ust=1530810836560488',
+  name: 'Hudson',
+  description: 'Sometimes there is nothing better than puppy love')
+Image.create(
+  imageURL: 'https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiCrqSW-YXcAhVHrVkKHTrWCW8QjRx6BAgBEAU&url=https%3A%2F%2Fwww.buzzfeed.com%2Fnotmonroe%2Fgolden-cocker-retriever-the-forever-puppy-gg32&psig=AOvVaw3ptVWpUIUyCrOzRg3sN3ua&ust=1530810907692976',
+  name: 'Golden Cocker Retriever',
+  description: "Quite possibly the cutest pup in the world")
