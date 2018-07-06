@@ -9,7 +9,9 @@ const store = createStore(imagesReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && 
 
 
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
 registerServiceWorker();
