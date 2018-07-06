@@ -4,9 +4,14 @@ import { Route, Switch } from 'react-router-dom';
 import ImagesIndex from '../components/ImagesIndex';
 import ImagesNew from './ImagesNew';
 import ImagesShow from './ImagesShow';
+import {getImages} from '../actions/images';
+
 
 
 class ImagesPage extends Component {
+  componentDidMount() {
+    this.props.getImages()
+  }
 
 
   render () {
@@ -32,4 +37,4 @@ class ImagesPage extends Component {
 
 
 
-export default connect(mapStateToProps)(ImagesPage);
+export default connect(mapStateToProps, {getImages})(ImagesPage);
