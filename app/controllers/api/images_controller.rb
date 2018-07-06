@@ -1,7 +1,8 @@
 class Api::ImagesController < ApplicationController
 
   def index
-    render json: Image.all
+    @images = Image.all
+    render json: @images
   end
 
   def create
