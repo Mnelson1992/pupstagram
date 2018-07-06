@@ -8,8 +8,9 @@ export function addimage (image) {
 
 export function getImages () {
   return (dispatch) => {
-    return fetch('/api/images')
+    return fetch('http://localhost:3000/api/images')
       .then(response => response.json())
       .then(images => dispatch({type: 'GET_IMAGES', images}))
+      .catch(error => console.log(error));
   }
 }

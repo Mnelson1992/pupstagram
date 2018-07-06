@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import imagesReducer from './ImagesReducer';
+import imagesReducer from './imagesReducer';
 
 export default combineReducers({
   images: imagesReducer

@@ -3,7 +3,7 @@ export default (state = [], action) => {
     case 'ADD_IMAGE':
       return state.concat(action.image)
     case 'GET_IMAGES':
-      return action.breeds
+      return action.images
     default:
       return state;
   }

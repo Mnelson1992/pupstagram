@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Mnelson1992/pupstagram#readme",
   "dependencies": {
-    "react-redux": "^5.0.7"
+    "react-redux": "^5.0.7",
+    "redux-thunk": "^2.3.0"
   }
 }
