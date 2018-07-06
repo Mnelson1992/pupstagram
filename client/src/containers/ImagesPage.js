@@ -35,6 +35,4 @@ class ImagesPage extends Component {
 
 }
 
-
-
 export default connect(mapStateToProps, {getImages})(ImagesPage);
