@@ -1,4 +1,4 @@
-export function addimage (image) {
+export function addImage (image) {
   return (dispatch) => {
     return fetch('/api/images', {method: 'post', body: JSON.stringify(image)})
       .then(response => response.json())
