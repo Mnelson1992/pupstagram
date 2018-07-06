@@ -5,11 +5,13 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 
 const App = () =>
-
+    <Router>
       <div className="App">
-        <Home />
         <Navbar />
+        <Route exact path="/" component={Home} />
+
       </div>
+    </Router>
 
 
 export default App;
