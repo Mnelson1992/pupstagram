@@ -9,3 +9,14 @@ class ImagesShow extends Component {
     )
   }
 }
+
+const mapStateToProps =(state, ownProps) => {
+  const image = state.images.find(image => image.id === parseInt(ownProps.match.params.imageId, 10))
+  if (image) {
+    return {image: image}
+  } else {
+    return {image: "Sorry an error occured please try again"}
+  }
+}
+
+export default connect(mapStateToProps)(ImagesShow)
