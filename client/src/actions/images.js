@@ -5,3 +5,11 @@ export function addimage (image) {
       .then(image => dispatch({type: 'ADD_IMAGE', image}))
   }
 }
+
+export function getImages () {
+  return (dispatch) => {
+    return fetch('/api/images')
+      .then(response => response.json())
+      .then(images => dispatch({type: 'GET_IMAGES', images}))
+  }
+}
