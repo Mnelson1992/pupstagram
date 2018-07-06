@@ -28,6 +28,14 @@ const Navbar = () =>
         background: 'darkblue'
       }}
     >Images</NavLink>
+    <NavLink
+      to="/images/new"
+      exact
+      style={link}
+      activeStyle={{
+        background: 'darkblue'
+      }}
+    >Add A Pic of A Pup</NavLink>
 
   </div>;
 
