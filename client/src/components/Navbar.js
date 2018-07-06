@@ -11,6 +11,20 @@ const link = {
   color: 'white'
 }
 
+const Navbar = () =>
+  <div>
+    <NavLink
+      to="/"
+      exact
+      style={link}
+      activeStyle={{
+        background: 'darkblue'
+      }}
+    >Home</NavLink>
+    
+  </div>;
+
+
 
 
 
