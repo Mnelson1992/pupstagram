@@ -1,0 +1,25 @@
+{
+  "name": "pupstagram",
+  "version": "1.0.0",
+  "description": "Images of awesome pups",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mnelson1992/pupstagram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mnelson1992/pupstagram/issues"
+  },
+  "homepage": "https://github.com/Mnelson1992/pupstagram#readme",
+  "dependencies": {
+    "react-redux": "^5.0.7"
+  }
+}
