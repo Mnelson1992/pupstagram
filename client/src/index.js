@@ -5,6 +5,8 @@ import {Provider} from 'react-redux';
 import { createStore } from 'redux';
 import registerServiceWorker from './registerServiceWorker';
 import imagesReducer from './reducers/imagesReducer'
+import rootReducer from './reducers/index';
+
 
 const store = createStore(imagesReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
