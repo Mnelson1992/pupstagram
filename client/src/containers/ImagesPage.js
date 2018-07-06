@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
+import { Route, Switch } from 'react-router-dom';
+import ImagesIndex from '../components/ImagesIndex';
+import ImagesNew from './ImagesNew';
+import ImagesShow from './ImagesShow';
 
 
 class ImagesPage extends Component {
