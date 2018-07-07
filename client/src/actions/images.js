@@ -14,3 +14,11 @@ export function getImages () {
       .catch(error => console.log(error));
   }
 }
+
+export function fetchImage (imageId) {
+	return dispatch => {
+		return fetch('/api/images/${imageId}')
+			.then(response => response.json())
+			.then(image => dispatch({type: 'FETCH_IMAGE', imageId}))
+	}
+}
