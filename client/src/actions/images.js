@@ -6,19 +6,23 @@ export function addImage (image) {
   }
 }
 
-export function getImages () {
+export function fetchImage (imageId) {
   return (dispatch) => {
-    return fetch('http://localhost:3000/api/images')
+    return fetch(`/api/images/${imageId}`)
       .then(response => response.json())
-      .then(images => dispatch({type: 'GET_IMAGES', images}))
-      .catch(error => console.log(error));
+      .then(imageId => dispatch({type: 'FETCH_IMAGE', imageId}))
   }
 }
 
-export function fetchImage (imageId) {
-	return dispatch => {
-		return fetch('/api/images/${imageId}')
-			.then(response => response.json())
-			.then(image => dispatch({type: 'FETCH_IMAGE', imageId}))
-	}
+export function getImages () {
+  return (dispatch) => {
+    return fetch('http://localhost:3000/api/images', {
+      headers : {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
+      .then(response => response.json())
+      .then(images => dispatch({type: 'GET_IMAGES', images}))
+  }
 }
