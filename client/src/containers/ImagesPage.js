@@ -17,11 +17,11 @@ class ImagesPage extends Component {
   render () {
     return (
       <div>
-        <Route exact path={this.props.match.url} render={() => <h4>Select an Image from the list to learn more.</h4>} />
+        <Route exact path={this.props.match.url} render={() => <h4>Click on a pups name below.</h4>} />
         <ImagesIndex images={this.props.images} />
         <Switch>
           <Route path={`${this.props.match.url}/new`} component={ImagesNew} />
-          <Route path={`${this.props.match.url}/:breedId`} component={ImagesShow} />
+          <Route path={`${this.props.match.url}/:imageId`} component={ImagesShow} />
         </Switch>
       </div>
       );

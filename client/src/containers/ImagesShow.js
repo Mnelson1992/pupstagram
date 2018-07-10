@@ -5,7 +5,7 @@ import ImageShowDisplay from '../components/ImageShowDisplay';
 class ImagesShow extends Component {
   render () {
     return (
-      <ImageShowDisplay />
+      <ImageShowDisplay image={this.props.image} />
     )
   }
 }

@@ -16,6 +16,7 @@ class ImagesNew extends Component {
     event.preventDefault();
     const { addImage, history } = this.props;
     addImage(this.state);
+    history.push('/images')
   }
 
   handleOnChange = event => {

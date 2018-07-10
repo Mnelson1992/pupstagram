@@ -8,7 +8,7 @@ class Api::ImagesController < ApplicationController
   def create
     @image = Image.new(image_params)
     if @image.save
-      render json: @user
+      render json: @image
     else
       render json: {errors: @image.errors}, status: 400
     end

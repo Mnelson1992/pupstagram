@@ -1,6 +1,6 @@
 export function addImage (image) {
   return (dispatch) => {
-    return fetch('/api/images', {method: 'post', body: JSON.stringify(image)})
+    return fetch('http://localhost:3000/api/images', {method: 'post', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({image: image})})
       .then(response => response.json())
       .then(image => dispatch({type: 'ADD_IMAGE', image}))
   }
@@ -8,7 +8,7 @@ export function addImage (image) {
 
 export function fetchImage (imageId) {
   return (dispatch) => {
-    return fetch(`/api/images/${imageId}`)
+    return fetch(`http://localhost:3000/api/images/${imageId}`)
       .then(response => response.json())
       .then(imageId => dispatch({type: 'FETCH_IMAGE', imageId}))
   }
