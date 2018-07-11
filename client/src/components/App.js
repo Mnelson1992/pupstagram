@@ -10,7 +10,7 @@ import '../App.css';
 
 const App = () =>
     <Router>
-      <div className="App">
+      <div>
       <header className="App-header">
         <Navbar />
       </header>
