@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ImagesIndex = props => {
   return (
     <div>
-      <h1>Images:</h1>
+      <h1>Pooches:</h1>
       <ul>
         {props.images.map((image) =>
           <li key={image.id}><Link to={`/images/${image.id}`}>{image.name}</Link></li>

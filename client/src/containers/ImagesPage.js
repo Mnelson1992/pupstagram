@@ -17,7 +17,7 @@ class ImagesPage extends Component {
   render () {
     return (
       <div>
-        <Route exact path={this.props.match.url} render={() => <h4>Click on a pups name below.</h4>} />
+        <Route exact path={this.props.match.url} render={() => <h4>Click on an picture below to learn more about a pup</h4>} />
         <ImagesIndex images={this.props.images} />
         <Switch>
           <Route path={`${this.props.match.url}/new`} component={ImagesNew} />

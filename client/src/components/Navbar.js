@@ -6,9 +6,9 @@ const link = {
   width: '100px',
   padding: '10px',
   margin: '0 6px 6px',
-  background: 'blue',
+  background: 'whitesmoke',
   textDecoration: 'none',
-  color: 'white'
+  color: 'navy'
 }
 
 const Navbar = () =>
@@ -18,14 +18,14 @@ const Navbar = () =>
       exact
       style={link}
       activeStyle={{
-        background: 'darkblue'
+        border: 'darkblue'
       }}
     >Home</NavLink>
     <NavLink
       to="/images"
       exact style={link}
       activeStyle={{
-        background: 'darkblue'
+        border: 'darkblue'
       }}
     >Images</NavLink>
     <NavLink
@@ -33,7 +33,7 @@ const Navbar = () =>
       exact
       style={link}
       activeStyle={{
-        background: 'darkblue'
+        border: 'darkblue'
       }}
     >Add A Pic of A Pup</NavLink>
 
