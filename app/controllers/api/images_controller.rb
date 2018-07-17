@@ -20,16 +20,10 @@ class Api::ImagesController < ApplicationController
     render json: @image
   end
 
-
-
   private
 
   def image_params
     params.require(:image).permit(:imageURL, :name, :description)
   end
-
-
-
-
 
 end

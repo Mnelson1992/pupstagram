@@ -1,7 +1,8 @@
 import React from 'react';
+import '../styles/home.css';
 
 const Home = () =>
-  <div>
+  <div className="wrapper" >
     <h1> Whether you are ......</h1>
         <h1> ....... having a bad day </h1>
     <h1> or having a great day ....... </h1>
