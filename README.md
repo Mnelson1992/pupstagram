@@ -1,7 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the Pupstagram! This application lets you post pictures of your pup and with a caption. So if you are in the need to see some incredibly awesome pictures of pups doing cute things, you have found the right application.
+
+# Installation
 
 Things you may want to cover:
 
