@@ -4,6 +4,11 @@ Welcome to the Pupstagram! This application lets you post pictures of your pup a
 
 # Installation
 
+This application is not yet hosted on Heroku, but will be in the next few weeks. To install the application simply clone this repo, run npm install and then use the command
+  ``  rake start ``
+
+  
+
 Things you may want to cover:
 
 * Ruby version
