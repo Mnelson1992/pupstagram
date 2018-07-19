@@ -13,3 +13,7 @@ Note that you will need to have rails installed locally on your system also.
 # Contributions
 
 If you notice any bugs or would like to contribute to this application, please send a pull request. When you send a pull request please provide a detailed description of the contribution and or bug that you may have noticed.
+
+# License
+
+* The application is available as open source under the terms of the MIT License.
