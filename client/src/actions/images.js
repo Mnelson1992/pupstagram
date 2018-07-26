@@ -6,11 +6,11 @@ export function addImage (image) {
   }
 }
 
-export function fetchImage (imageId) {
+export function imageFavorite (imageId) {
   return (dispatch) => {
-    return fetch(`http://localhost:3000/api/images/${imageId}`)
+    return fetch(`http://localhost:3000/api/images/${imageId}`, {method: 'put', body: imageId})
       .then(response => response.json())
-      .then(imageId => dispatch({type: 'FETCH_IMAGE', imageId}))
+      .then(imageId => dispatch({type: 'IMAGE_FAVORITE', imageId}))
   }
 }
 
