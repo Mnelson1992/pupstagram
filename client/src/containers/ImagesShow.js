@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ImageShowDisplay from '../components/ImageShowDisplay';
+import { imageFavorite } from '../actions/images';
+
 
 class ImagesShow extends Component {
   render () {
