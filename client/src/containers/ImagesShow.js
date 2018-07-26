@@ -5,7 +5,7 @@ import ImageShowDisplay from '../components/ImageShowDisplay';
 class ImagesShow extends Component {
   render () {
     return (
-      <ImageShowDisplay image={this.props.image} />
+      <ImageShowDisplay image={this.props.image} imageFavorite={this.props.imageFavorite} />
     )
   }
 }
@@ -19,4 +19,4 @@ const mapStateToProps =(state, ownProps) => {
   }
 }
 
-export default connect(mapStateToProps)(ImagesShow)
+export default connect(mapStateToProps, {imageFavorite})(ImagesShow);
