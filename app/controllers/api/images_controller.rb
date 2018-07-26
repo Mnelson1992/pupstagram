@@ -15,9 +15,10 @@ class Api::ImagesController < ApplicationController
   end
 
   def update
-    @image = Image.find(params[:id])
-    @image.update_attributes(image_params)
-    render json: @image
+    image = Image.find(params[:id])
+    image.wasFavorited
+    image.save
+    render json: image.id
   end
 
   private
