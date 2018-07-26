@@ -6,11 +6,12 @@ export function addImage (image) {
   }
 }
 
-export function imageFavorite (imageId) {
+export function imageFavorite (image) {
+  const updatedImage = Object.assign(...image, { favorites: image.favorites + 1 })
   return (dispatch) => {
-    return fetch(`http://localhost:3000/api/images/${imageId}`, {method: 'put', body: imageId})
+    return fetch(`/api/images/${image}`, {method: 'put', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({image: updatedImage})})
       .then(response => response.json())
-      .then(imageId => dispatch({type: 'IMAGE_FAVORITE', imageId}))
+      .then(imageId => dispatch({type: 'IMAGE_FAVORITE', image}))
   }
 }
 

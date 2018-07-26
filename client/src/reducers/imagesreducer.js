@@ -5,11 +5,13 @@ export default (state = [], action) => {
     case 'GET_IMAGES':
       return action.images
     case 'IMAGE_FAVORITE':
-      const image = state.find(image => image.id === action.imageId)
-      image.favorites += 1
-      return [...state.filter(image => image.id !== action.imageId), image]
-    case 'FETCH_IMAGE':
-      return action.image
+      return state.map((image) => {
+        if (image.id === action.image.id) {
+          return action.image
+        } else {
+          return image
+        }
+      });
     default:
       return state;
   }

@@ -14,9 +14,8 @@ class ImagesNew extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    const { addImage, history } = this.props;
-    addImage(this.state);
-    history.push('/images')
+    this.props.addImage({...this.state, favorite: 0});
+    this.props.history.push('/images');
   }
 
   handleOnChange = event => {
