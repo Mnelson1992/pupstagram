@@ -7,6 +7,7 @@ class Api::ImagesController < ApplicationController
 
   def create
     @image = Image.new(image_params)
+    @image.favorites = 0
     if @image.save
       render json: @image
     else

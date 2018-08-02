@@ -7,7 +7,7 @@ import { imageFavorite } from '../actions/images';
 class ImagesShow extends Component {
   render () {
     return (
-      <ImageShowDisplay image={this.props.image} imageFavorite={this.props.imageFavorite} />
+      <ImageShowDisplay image={this.props.image} imageFavorite={this.props.imageFavorite}/>
     )
   }
 }
