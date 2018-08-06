@@ -7,7 +7,7 @@ const ImagesIndex = props => {
     <div>
       <h1>Pooches:</h1>
       <ul>
-        {props.images.map((image) =>
+        {props.images.sort((a,b) => b.favorites - a.favorites).map((image) =>
           <li key={image.id}><Link to={`/images/${image.id}`}>{image.name}</Link><Button image={image}/></li>
         )}
       </ul>
