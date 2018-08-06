@@ -19,7 +19,7 @@ class Api::ImagesController < ApplicationController
     image = Image.find(params[:id])
     image.wasFavorited
     image.save
-    render json: image.id
+    render json: image
   end
 
   private
